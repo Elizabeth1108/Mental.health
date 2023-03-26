@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="Main.css">
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help</title>
+<style> 
+    .test{
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+        padding: 30px;
+        line-height: 50px;
+        font-size: 25px;
+        font-weight: 500;
+  	background-color: rgb(255, 255, 255);
+ 	margin: auto;
+        
+	
+width: 980px;
+  	min-width: 50%;
+  	max-width: 100%;
+    width: fit-content;
+    }
+    body .ph{
+        background: url(imgt.jpg)   no-repeat center center;
+        background-position: 50%;
+        background-size: cover;  
+        background-repeat: no-repeat;
+
+    }
+    body {
+        background: url(imgfon2.png)   no-repeat center center ;
+        background-position: 50%;
+        background-size: cover;  
+        background-repeat: no-repeat;
+    }
+    .test h2{
+        font-weight: 600;
+    }
+    
+    #answ{
+        color:red;
+    }   
+
+#bal{
+	text-align:justify ;
+  	width: 980px;
+  	min-width: 50%;
+  	max-width: 100%;
+} 
+    
+.manual {
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif  ;
+        font-size: 25px;
+        line-height: 30px;
+        color: rgb(249, 249, 249);
+        padding: 20px;
+        text-align: justify;
+    }
+.inf{
+        padding: 7px;
+	    width: fit-content;
+        line-height: 38px;
+	    text-align:justify ;
+        
+    }
+.name{
+        padding: 7px;
+	    width: fit-content;
+        line-height: 38px;
+	    text-align:justify ;
+        font-size: 30px;
+        font-weight: 200;
+        
+}
+.btn{
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 12px 16px;
+        background-color: rgb(0, 0, 0);
+        border-radius:100px;
+        font-family: 'Arial Narrow Bold', sans-serif;
+        font-size: 16px;
+        margin-left: 6px;
+        margin-right: 4px;
+        color: rgb(255, 255, 255);
+        
+    }
+        
+.listv{
+        list-style-type: decimal;
+    }
+.top h1{
+        font-weight:200px;
+        padding: 0px;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+        font-size: 35px ;
+        text-decoration: none;
+        color: rgb(254, 254, 254);
+       
+    }
+.top p{
+        font-weight:200px;
+        padding: 0px;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+        font-size: 35px ;
+        text-decoration: none;
+        color: rgb(254, 254, 254);
+        margin: 100px;  
+        text-align: center;
+    }
+.tag{
+        font-weight:300px;
+        padding-bottom:  300px;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 100px ;
+        text-decoration: none;
+        color: rgb(254, 254, 254);
+        margin: 20px;
+        display: flex; 
+        justify-content: space-around;
+        align-items: center;   
+    }  
+    </style>
+</head>
+<body>
+ <div class="ph">
+     <header class="top">
+        <div class="logo"><img src="imgic.svg" height="30%" width="30%">
+        <a href="Project2.0.html" class="logoh1"> Mental health</a></div>
+        <nav class="menu"><a href="Useful.html">Интересное</a>
+        <a href="Test.html">Помощь</a>
+        <a href="Find.html"> Поиск</a></nav>
+        
+    </header>
+    <p class="tag">Тест</p>
+
+ </div>
+    <header class="manual"> 
+        <b>ИНСТРУКЦИЯ</b>: ниже перечислены некоторые утверждения. Сначала прочитайте
+    все утверждения, перечисленные в одном пункте. Выберите из каждого пункта
+    один ответ, который наилучшим образом отражает ваше состояние. Обведите
+    кружком стоящую рядом с этим утверждением цифру. Выбрать нужно только
+    один вариант ответа из предложенных в каждом пункте. Убедитесь, что вы
+    ответили на все вопросы.
+        Отвечая на вопросы, имейте в виду, что они относятся к состоянию не только на
+    момент заполнения опросника, но и на протяжении последних 7 дней.
+  
+    </header>
+    
+    <form class="test" onreset="clean()">
+        <h2>1.Ощущение онемения или покалывания в теле</h2>
+        <div><input  type="radio"  value="0"name="q1" id="q1_1" > <label for="q1_1">Совсем не беспокоил</label>  </div>
+        <div><input type="radio" value="1" name="q1" id="q1_2"><label for="q1_2">Слегка. Не слишком меня беспокоил</label></div>
+        <div><input type="radio" value="2" name="q1" id="q1_3"><label for="q1_3">Умеренно. Это было неприятно, но я мог/могла это переносить </label></div>
+        <div><input type="radio" value="3" name="q1" id="q1_4"><label for="q1_4"> Очень сильно. Я с трудом мог/могла это выносить </label></div>
+        
+        <h2>2.Ощущение жары </h2>
+        <div><input  type="radio"  value="0"name="q2" id="q2_1" > <label for="q2_1">Совсем не беспокоил</label>  </div>
+        <div><input type="radio" value="1" name="q2" id="q2_2"><label for="q2_2">Слегка. Не слишком меня беспокоил</label></div>
+        <div><input type="radio" value="2" name="q2" id="q2_3"><label for="q2_3">Умеренно. Это было неприятно, но я мог/могла это переносить </label></div>
+        <div><input type="radio" value="3" name="q2" id="q2_4"><label for="q2_4"> Очень сильно. Я с трудом мог/могла это выносить </label></div>
+        
+        <h2>3. Дрожь в ногах </h2>
+        <div><input  type="radio"  value="0"name="q3" id="q3_1" > <label for="q3_1">Совсем не беспокоил</label>  </div>
+        <div><input type="radio" value="1" name="q3" id="q3_2"><label for="q3_2">Слегка. Не слишком меня беспокоил</label></div>
+        <div><input type="radio" value="2" name="q3" id="q3_3"><label for="q3_3">Умеренно. Это было неприятно, но я мог/могла это переносить </label></div>
+        <div><input type="radio" value="3" name="q3" id="q3_4"><label for="q3_4"> Очень сильно. Я с трудом мог/могла это выносить </label></div>
+        
+        <h2>4.Неспособность расслабиться </h2>
+        <div><input  type="radio"  value="0"name="q4" id="q4_1" > <label for="q4_1">Совсем не беспокоил</label>  </div>
+        <div><input type="radio" value="1" name="q4" id="q4_2"><label for="q4_2">Слегка. Не слишком меня беспокоил</label></div>
+        <div><input type="radio" value="2" name="q4" id="q4_3"><label for="q4_3">Умеренно. Это было неприятно, но я мог/могла это переносить </label></div>
+        <div><input type="radio" value="3" name="q4" id="q4_4"><label for="q4_4"> Очень сильно. Я с трудом мог/могла это выносить </label></div>
+        
+        <h2>5. Страх, что произойдет самое плохое </h2>
+        <div><input  type="radio"  value="0"name="q5" id="q5_1" > <label for="q5_1">Совсем не беспокоил</label>  </div>
+        <div><input type="radio" value="1" name="q5" id="q5_2"><label for="q5_2">Слегка. Не слишком меня беспокоил</label></div>
+        <div><input type="radio" value="2" name="q5" id="q5_3"><label for="q5_3">Умеренно. Это было неприятно, но я мог/могла это переносить </label></div>
+        <div><input type="radio" value="3" name="q5" id="q5_4"><label for="q5_4"> Очень сильно. Я с трудом мог/могла это выносить </label></div>
+        
+        <h2>6. Головокружение или ощущение легкости в голове</h2>
+        <div><input  type="radio"  value="0"name="q6" id="q6_1" > <label for="q6_1">Совсем не беспокоил</label>  </div>
+        <div><input type="radio" value="1" name="q6" id="q6_2"><label for="q6_2">Слегка. Не слишком меня беспокоил</label></div>
+        <div><input type="radio" value="2" name="q6" id="q6_3"><label for="q6_3">Умеренно. Это было неприятно, но я мог/могла это переносить </label></div>
+        <div><input type="radio" value="3" name="q6" id="q6_4"><label for="q6_4"> Очень сильно. Я с трудом мог/могла это выносить </label></div>
+
+        <h2>7. Учащенное сердцебиение</h2>
+        <div><input  type="radio"  value="0"name="q7" id="q7_1" > <label for="q7_1">Совсем не беспокоил</label>  </div>
+        <div><input type="radio" value="1" name="q7" id="q7_2"><label for="q7_2">Слегка. Не слишком меня беспокоил</label></div>
+        <div><input type="radio" value="2" name="q7" id="q7_3"><label for="q7_3">Умеренно. Это было неприятно, но я мог/могла это переносить </label></div>
+        <div><input type="radio" value="3" name="q7" id="q7_4"><label for="q7_4"> Очень сильно. Я с трудом мог/могла это выносить </label></div>
+        
+        <h2>8. Неустойчивость</h2>
+        <div><input  type="radio"  value="0"name="q8" id="q8_1" > <label for="q8_1">Совсем не беспокоил</label>  </div>
+        <div><input type="radio" value="1" name="q8" id="q8_2"><label for="q8_2">Слегка. Не слишком меня беспокоил</label></div>
+        <div><input type="radio" value="2" name="q8" id="q8_3"><label for="q8_3">Умеренно. Это было неприятно, но я мог/могла это переносить </label></div>
+        <div><input type="radio" value="3" name="q8" id="q8_4"><label for="q8_4"> Очень сильно. Я с трудом мог/могла это выносить </label></div>
+
+        <h2>9. Ощущение ужаса</h2>
+        <div><input  type="radio"  value="0"name="q9" id="q9_1" > <label for="q9_1">Совсем не беспокоил</label>  </div>
+        <div><input type="radio" value="1" name="q9" id="q9_2"><label for="q9_2">Слегка. Не слишком меня беспокоил</label></div>
+        <div><input type="radio" value="2" name="q9" id="q9_3"><label for="q9_3">Умеренно. Это было неприятно, но я мог/могла это переносить </label></div>
+        <div><input type="radio" value="3" name="q9" id="q9_4"><label for="q9_4"> Очень сильно. Я с трудом мог/могла это выносить </label></div>
+
+        <h2>10. Нервозность</h2>
+        <div><input  type="radio"  value="0"name="q10" id="q10_1" > <label for="q10_1">Совсем не беспокоил</label>  </div>
+        <div><input type="radio" value="1" name="q10" id="q10_2"><label for="q10_2">Слегка. Не слишком меня беспокоил</label></div>
+        <div><input type="radio" value="2" name="q10" id="q10_3"><label for="q10_3">Умеренно. Это было неприятно, но я мог/могла это переносить </label></div>
+        <div><input type="radio" value="3" name="q10" id="q10_4"><label for="q10_4"> Очень сильно. Я с трудом мог/могла это выносить </label></div>
+
+        <h2>11. Дрожь в руках</h2>
+        <div><input  type="radio"  value="0"name="q11" id="q11_1" > <label for="q11_1">Совсем не беспокоил</label>  </div>
+        <div><input type="radio" value="1" name="q11" id="q11_2"><label for="q11_2">Слегка. Не слишком меня беспокоил</label></div>
+        <div><input type="radio" value="2" name="q11" id="q11_3"><label for="q11_3">Умеренно. Это было неприятно, но я мог/могла это переносить </label></div>
+        <div><input type="radio" value="3" name="q11" id="q11_4"><label for="q11_4"> Очень сильно. Я с трудом мог/могла это выносить </label></div>
+
+        <h2>12. Ощущение удушья</h2>
+        <div><input  type="radio"  value="0"name="q12" id="q12_1" > <label for="q12_1">Совсем не беспокоил</label>  </div>
+        <div><input type="radio" value="1" name="q12" id="q12_2"><label for="q12_2">Слегка. Не слишком меня беспокоил</label></div>
+        <div><input type="radio" value="2" name="q12" id="q12_3"><label for="q12_3">Умеренно. Это было неприятно, но я мог/могла это переносить </label></div>
+        <div><input type="radio" value="3" name="q12" id="q12_4"><label for="q12_4"> Очень сильно. Я с трудом мог/могла это выносить </label></div>
+
+        <h2>13. Шаткость походки</h2>
+        <div><input  type="radio"  value="0"name="q13" id="q13_1" > <label for="q13_1">Совсем не беспокоил</label>  </div>
+        <div><input type="radio" value="1" name="q13" id="q13_2"><label for="q13_2">Слегка. Не слишком меня беспокоил</label></div>
+        <div><input type="radio" value="2" name="q13" id="q13_3"><label for="q13_3">Умеренно. Это было неприятно, но я мог/могла это переносить </label></div>
+        <div><input type="radio" value="3" name="q13" id="q13_4"><label for="q13_4"> Очень сильно. Я с трудом мог/могла это выносить </label></div>
+
+        <h2>14. Страх утраты контроля</h2>
+        <div><input  type="radio"  value="0"name="q14" id="q14_1" > <label for="q14_1">Совсем не беспокоил</label>  </div>
+        <div><input type="radio" value="1" name="q14" id="q14_2"><label for="q14_2">Слегка. Не слишком меня беспокоил</label></div>
+        <div><input type="radio" value="2" name="q14" id="q14_3"><label for="q14_3">Умеренно. Это было неприятно, но я мог/могла это переносить </label></div>
+        <div><input type="radio" value="3" name="q14" id="q14_4"><label for="q14_4"> Очень сильно. Я с трудом мог/могла это выносить </label></div>
+
+        <h2>15. Затрудненность дыхания</h2>
+        <div><input  type="radio"  value="0"name="q15" id="q15_1" > <label for="q15_1">Совсем не беспокоил</label>  </div>
+        <div><input type="radio" value="1" name="q15" id="q15_2"><label for="q15_2">Слегка. Не слишком меня беспокоил</label></div>
+        <div><input type="radio" value="2" name="q15" id="q15_3"><label for="q15_3">Умеренно. Это было неприятно, но я мог/могла это переносить </label></div>
+        <div><input type="radio" value="3" name="q15" id="q15_4"><label for="q15_4"> Очень сильно. Я с трудом мог/могла это выносить </label></div>
+
+        <h2>16. Страх смерти</h2>
+        <div><input  type="radio"  value="0"name="q16" id="q16_1" > <label for="q16_1">Совсем не беспокоил</label>  </div>
+        <div><input type="radio" value="1" name="q16" id="q16_2"><label for="q16_2">Слегка. Не слишком меня беспокоил</label></div>
+        <div><input type="radio" value="2" name="q16" id="q16_3"><label for="q16_3">Умеренно. Это было неприятно, но я мог/могла это переносить </label></div>
+        <div><input type="radio" value="3" name="q16" id="q16_4"><label for="q16_4"> Очень сильно. Я с трудом мог/могла это выносить </label></div>
+
+        <h2>17. Испуг</h2>
+        <div><input  type="radio"  value="0"name="q17" id="q17_1" > <label for="q17_1">Совсем не беспокоил</label>  </div>
+        <div><input type="radio" value="1" name="q17" id="q17_2"><label for="q17_2">Слегка. Не слишком меня беспокоил</label></div>
+        <div><input type="radio" value="2" name="q17" id="q17_3"><label for="q17_3">Умеренно. Это было неприятно, но я мог/могла это переносить </label></div>
+        <div><input type="radio" value="3" name="q17" id="q17_4"><label for="q17_4"> Очень сильно. Я с трудом мог/могла это выносить </label></div>
+
+        <h2>18. Желудочно-кишечные расстройства</h2>
+        <div><input  type="radio"  value="0"name="q18" id="q18_1" > <label for="q18_1">Совсем не беспокоил</label>  </div>
+        <div><input type="radio" value="1" name="q18" id="q18_2"><label for="q18_2">Слегка. Не слишком меня беспокоил</label></div>
+        <div><input type="radio" value="2" name="q18" id="q18_3"><label for="q18_3">Умеренно. Это было неприятно, но я мог/могла это переносить </label></div>
+        <div><input type="radio" value="3" name="q18" id="q18_4"><label for="q18_4"> Очень сильно. Я с трудом мог/могла это выносить </label></div>
+
+        <h2>19. Обмороки</h2>
+        <div><input  type="radio"  value="0"name="q19" id="q19_1" > <label for="q19_1">Совсем не беспокоил</label>  </div>
+        <div><input type="radio" value="1" name="q19" id="q19_2"><label for="q19_2">Слегка. Не слишком меня беспокоил</label></div>
+        <div><input type="radio" value="2" name="q19" id="q19_3"><label for="q19_3">Умеренно. Это было неприятно, но я мог/могла это переносить </label></div>
+        <div><input type="radio" value="3" name="q19" id="q19_4"><label for="q19_4"> Очень сильно. Я с трудом мог/могла это выносить </label></div>
+
+        <h2>20. Приливы крови к лицу</h2>
+        <div><input  type="radio"  value="0"name="q20" id="q20_1" > <label for="q20_1">Совсем не беспокоил</label>  </div>
+        <div><input type="radio" value="1" name="q20" id="q20_2"><label for="q20_2">Слегка. Не слишком меня беспокоил</label></div>
+        <div><input type="radio" value="2" name="q20" id="q20_3"><label for="q20_3">Умеренно. Это было неприятно, но я мог/могла это переносить </label></div>
+        <div><input type="radio" value="3" name="q20" id="q20_4"><label for="q20_4"> Очень сильно. Я с трудом мог/могла это выносить </label></div>
+
+        <h2>21. Усиление потоотделения (не связанное с жарой)</h2>
+        <div><input  type="radio"  value="0"name="q21" id="q21_1" > <label for="q21_1">Совсем не беспокоил</label>  </div>
+        <div><input type="radio" value="1" name="q21" id="q21_2"><label for="q21_2">Слегка. Не слишком меня беспокоил</label></div>
+        <div><input type="radio" value="2" name="q21" id="q21_3"><label for="q21_3">Умеренно. Это было неприятно, но я мог/могла это переносить </label></div>
+        <div><input type="radio" value="3" name="q21" id="q21_4"><label for="q21_4"> Очень сильно. Я с трудом мог/могла это выносить </label></div>
+
+
+        
+        
+
+
+        <p><input type="button" value="Результаты"  onclick="chek()" class="btn">
+        <input type="reset" value="Сбросить" class="btn" >
+        </p>
+
+        
+        <p id="answ"> </p>
+        <p id="bal"> </p>
+
+
+        </form>
+    <script>
+        function clean(){
+            let answ=document.getElementById('answ')
+            let bal=document.getElementById('bal')
+            bal.innerHTML=''
+            answ.innerHTML=''
+        }
+        function chek(){ 
+            let noansw=''
+            let res=0
+            let answ=document.getElementById('answ')
+            let bal=document.getElementById('bal')
+            if (document.forms[0].q1.value=='') noansw+='Вы не ответили на первый вопрос'+'<br>'
+            res+=+document.forms[0].q1.value
+            if (document.forms[0].q2.value=='') noansw+='Вы не ответили на второй вопрос'+'<br>'
+            res+=+document.forms[0].q2.value
+            if (document.forms[0].q3.value=='') noansw+='Вы не ответили на третий вопрос'+'<br>'
+            res+=+document.forms[0].q3.value
+            if (document.forms[0].q4.value=='') noansw+='Вы не ответили на четвёртый вопрос'+'<br>'
+            res+=+document.forms[0].q4.value
+            if (document.forms[0].q5.value=='') noansw+='Вы не ответили на пятый вопрос'+'<br>'
+            res+=+document.forms[0].q5.value
+            if (document.forms[0].q6.value=='') noansw+='Вы не ответили на шестой вопрос'+'<br>'
+            res+=+document.forms[0].q6.value
+            if (document.forms[0].q7.value=='') noansw+='Вы не ответили на седьмой вопрос'+'<br>'
+            res+=+document.forms[0].q7.value
+            if (document.forms[0].q8.value=='') noansw+='Вы не ответили на восьмой вопрос'+'<br>'
+            res+=+document.forms[0].q8.value
+            if (document.forms[0].q9.value=='') noansw+='Вы не ответили на девятый вопрос'+'<br>'
+            res+=+document.forms[0].q9.value
+            if (document.forms[0].q10.value=='') noansw+='Вы не ответили на десятый вопрос'+'<br>'
+            res+=+document.forms[0].q10.value
+            if (document.forms[0].q11.value=='') noansw+='Вы не ответили на одиннадцатый вопрос'+'<br>'
+            res+=+document.forms[0].q11.value
+            if (document.forms[0].q12.value=='') noansw+='Вы не ответили на двенадцатый вопрос'+'<br>'
+            res+=+document.forms[0].q12.value
+            if (document.forms[0].q13.value=='') noansw+='Вы не ответили на тринадцатый вопрос'+'<br>'
+            res+=+document.forms[0].q13.value
+            if (document.forms[0].q14.value=='') noansw+='Вы не ответили на четырнадцатый вопрос'+'<br>'
+            res+=+document.forms[0].q14.value
+            if (document.forms[0].q15.value=='') noansw+='Вы не ответили на пятнадцатый вопрос'+'<br>'
+            res+=+document.forms[0].q15.value
+            if (document.forms[0].q16.value=='') noansw+='Вы не ответили на шестнадцатый вопрос'+'<br>'
+            res+=+document.forms[0].q16.value
+            if (document.forms[0].q17.value=='') noansw+='Вы не ответили на семнадцатый вопрос'+'<br>'
+            res+=+document.forms[0].q17.value
+            if (document.forms[0].q18.value=='') noansw+='Вы не ответили на восемнадцатый вопрос'+'<br>'
+            res+=+document.forms[0].q18.value
+            if (document.forms[0].q19.value=='') noansw+='Вы не ответили на девятнадцатый вопрос'+'<br>'
+            res+=+document.forms[0].q19.value
+            if (document.forms[0].q20.value=='') noansw+='Вы не ответили на двадцатый вопрос'+'<br>'
+            res+=+document.forms[0].q20.value
+            if (document.forms[0].q21.value=='') noansw+='Вы не ответили на двадцать первый вопрос'+'<br>'
+            res+=+document.forms[0].q21.value
+
+
+
+            bal.innerHTML='Необходимо ответить на все вопросы, чтобы результаты теста были корректны.'
+            answ.innerHTML=noansw
+            
+            if(res>0 && res<=16) {
+		        bal.innerHTML='<h2>Откуда берется тревога</h2><p class="inf">Причины ситуативной тревоги обычно кроются в конкретных событиях, вызывающих беспокойство. Например, увольнение с работы, смена места жительства, проблемы в семье. Причины постоянной тревожности могут быть физическими: изменения гормонального фона, стресс, депрессия, иные расстройства психики. Иногда тревожность «родом из детства»: если ребенок был свидетелем беспокойства родителей по поводу и без. Например, взрослые могли сильно переживать по мелочам, нагнетали, раздували из мухи слона — и ребенок зафиксировал такую модель поведения.</p><h2>Решение проблемы </h2><p class="inf"> Эти шаги помогут быстро успокоиться в конкретной ситуации, однако следует понимать, что они не избавят от проблемы окончательно — нужно пересматривать и свой образ жизни. Откажитесь от кофе, энергетических напитков, наладьте режим сна, „профильтруйте“ окружение, фильмы, музыку, просмотр новостей, начните заниматься спортом. Когда состояние тревоги длится более 6 месяцев и сопровождается физическими симптомами, то речь может идти о тревожном расстройстве, которое само не пройдет. В таком случае требуется помощь психолога или психотерапевта.Методы релаксации нужно осваивать заранее, чтобы в критический момент можно былозапросто противостоять раздражению и психической усталости. При регулярных занятиях релаксационные упражнения постепенно станут привычкой. Большинство из нас уже настолько привыкло к душевному и мышечному напряжению, что воспринимают его как естественное состояние, даже не осознавая, насколько это вредно.</p> <h3> Практики для снижения уровня тревоги:</h3>  <p class ="name">Мышечная релаксация</p><p class="inf">Повышенная тревожность стимулирует мышечное напряжение, а оно лишь усиливает дискомфорт. Чтобы этого избежать, учимся расслаблять мышцы. Поочередно напрягаем и расслабляем спустя 7-10 секунд конкретные группы мышц – лоб, рот, нос, кисти, пресс, бедра.<p class="name"> Массаж и самомассаж.</p><p class="inf"> Делать просто руками или при помощи подручных средств. Например, если есть массажные колючие мячики, то массаж можно делать при помощи них. Менять температуры: делать массаж теплым, холодным. Цель – обеспечить разнообразие телесных ощущений, и тем самым почувствовать тело, «заземлить» себя. Почувствуйте разницу структуры тела под пальцами, обратите внимание на свои ощущения. Не забывайте, что массажировать можно не только руки, ноги, стопы, бёдра, живот, но и уши, лоб, лицо, шею, голову, пальцы рук и ног - в этих частях тела также могут быть зажимы, в них тоже скапливается напряжение.</p><p class ="name">Дыхательные практики: </p><p class="inf">Чем чаще вы будете тренироваться в спокойном состоянии, тем лучше у вас получится использовать этот опыт в ситуациях, провоцирующих тревогу.<p class ="name"> *Ровное дыхание</p><p class ="inf">Это очень простое дыхательное упражнение, выполнять его можно в любом месте и в любое время. Оно помогает успокоить центральную нервную систему, что, в свою очередь, усиливает внимание и уменьшает признаки тревоги и стресса. Эта техника особенно полезна в моменты, когда вы чувствуете раздражение и гнев или если долго не можете заснуть.<ol><li>1.    Вдохните через нос, сосчитав до четырех.</li><li>2.     Задержите дыхание.</li><li>3.      Выдохните через нос, также сосчитав до четырех. Когда вы привыкнете считать до четырех, начинайте увеличивать счет во время вдоха и выдоха до шести, а потом до восьми.</li></ol><p class="name">*Брюшное(диафрагмальное) дыхание</p><p class="inf">Большинство из нас забыли, как правильно дышать. Мы дышим ртом: поверхностно, неглубоко, практически не используя диафрагму. При таком дыхании задействована только верхняя часть легких и мы недополучаем кислород.</p><ol><li>1.      Положите одну руку на грудь, а другую на живот. Когда вы делаете глубокий вдох, рука на животе должна приподниматься выше, чем рука на груди. Это гарантирует, что диафрагма наполняет легкие воздухом полностью.</li><li>2.    После выдоха через рот сделайте медленный глубокий вдох через нос, сосчитав до четырех или до пяти, и задержите дыхание на 4-5 секунд.</li><li>3.       Медленно выдохните через рот на счет пять.</li><li>4.     Повторите цикл еще четыре раза (в общей сложности вы сделаете пять глубоких вдохов), а затем постарайтесь делать один вдох каждые десять секунд (то есть шесть вдохов в минуту). Когда вы освоите эту технику, можно будет включать в упражнение слова: например, вдыхать на слове «релаксация» и выдыхать на «стрессе» или «гневе». Идея в том, чтобы во время вдоха вы как бы поглощали позитивную эмоцию, а на выдохе выпускали негативную.</li></ol><p class="name">*Дыхание с чередованием ноздрей</p><p class="inf">Чтобы выполнить это упражнение, вдыхайте через одну ноздрю, задерживайте дыхание, а потом выдыхайте через другую в соотношении 2:8:4. Один «подход» состоит из шести шагов. Начните с трех подходов и постепенно увеличивайте их количество. Шаги в рамках одного подхода:</p><ol><li>1.	Вдохните через левую ноздрю, закрыв правую большим пальцем и считая до четырех.</li><li>2.  Задержите дыхание, закрыв обе ноздри и считая до шестнадцати.</li><li>3.Выдохните через правую ноздрю, закрыв левую безымянным пальцем и мизинцем и считая до восьми.</li><li>4.	Вдохните через правую ноздрю (левая все еще закрыта безымянным пальцем и мизинцем), считая до четырех.</li><li>5.	Задержите дыхание, закрыв обе ноздри и считая до шестнадцати.</li><li>6.	Выдохните через левую ноздрю (правая все еще закрыта большим пальцем), считая до восьми.</li></ol><p class="name">Медитация</p><ol><li>1. Сядьте поудобнее или займите положение лежа. </li><li>2. Закройте глаза.</li><li>3.       Сконцентрируйтесь на дыхании. Вдыхайте и выдыхайте через нос. Вдохи и выдохи должны осуществляться медленно, без усилий.</li><li>4.      Фиксируйте свои ощущения, связанные с дыханием; ориентируясь на внутренние ощущения, "понаблюдайте" за тем, как поднимается и опускается область живота во время вдоха и выдоха, как двигается грудная клетка, плечи; "прислушайтесь" к вашему телу. Как только ваши мысли начинают "прыгать" или появляются такие мысли, которые "перетягивают на себя одеяло внимания", снова концентрируйтесь на дыхании.</li><li>5.        Реагируйте на все ваши физические ощущения и на эмоции точно так же, как вы реагируете на мысли: фиксируйте их присутствие, дайте им возможность возникать и исчезать в вашем теле, проходить через него, однако продолжайте концентрироваться на дыхании. Медитируйте для начала по три минуты в день, постепенно увеличивая продолжительность медитации.</li></ol>'}
+
+
+
+
+
+
+
+            if(noansw=='') if (res>=17 && res<=32) {
+                bal.innerHTML='<h2>Откуда берется тревога</h2><p class="inf">Причины ситуативной тревоги обычно кроются в конкретных событиях, вызывающих беспокойство. Например, увольнение с работы, смена места жительства, проблемы в семье. Причины постоянной тревожности могут быть физическими: изменения гормонального фона, стресс, депрессия, иные расстройства психики. Иногда тревожность «родом из детства»: если ребенок был свидетелем беспокойства родителей по поводу и без. Например, взрослые могли сильно переживать по мелочам, нагнетали, раздували из мухи слона — и ребенок зафиксировал такую модель поведения.</p><h2>Решение проблемы </h2><p class="inf"> Эти шаги помогут быстро успокоиться в конкретной ситуации, однако следует понимать, что они не избавят от проблемы окончательно — нужно пересматривать и свой образ жизни. Откажитесь от кофе, энергетических напитков, наладьте режим сна, „профильтруйте“ окружение, фильмы, музыку, просмотр новостей, начните заниматься спортом. Когда состояние тревоги длится более 6 месяцев и сопровождается физическими симптомами, то речь может идти о тревожном расстройстве, которое само не пройдет. В таком случае требуется помощь психолога или психотерапевта.Методы релаксации нужно осваивать заранее, чтобы в критический момент можно былозапросто противостоять раздражению и психической усталости. При регулярных занятиях релаксационные упражнения постепенно станут привычкой. Большинство из нас уже настолько привыкло к душевному и мышечному напряжению, что воспринимают его как естественное состояние, даже не осознавая, насколько это вредно.</p>  <p class="name">Медитация</p><ol><li>1. Сядьте поудобнее или займите положение лежа. </li><li>2. Закройте глаза.</li><li>3.       Сконцентрируйтесь на дыхании. Вдыхайте и выдыхайте через нос. Вдохи и выдохи должны осуществляться медленно, без усилий.</li><li>4.      Фиксируйте свои ощущения, связанные с дыханием; ориентируясь на внутренние ощущения, "понаблюдайте" за тем, как поднимается и опускается область живота во время вдоха и выдоха, как двигается грудная клетка, плечи; "прислушайтесь" к вашему телу. Как только ваши мысли начинают "прыгать" или появляются такие мысли, которые "перетягивают на себя одеяло внимания", снова концентрируйтесь на дыхании.</li><li>5.        Реагируйте на все ваши физические ощущения и на эмоции точно так же, как вы реагируете на мысли: фиксируйте их присутствие, дайте им возможность возникать и исчезать в вашем теле, проходить через него, однако продолжайте концентрироваться на дыхании. Медитируйте для начала по три минуты в день, постепенно увеличивая продолжительность медитации.</li></ol> '}
+            
+
+            if(noansw=='') if (res>=33 && res<=32) bal.innerHTML=''
+
+            
+    }
+    </script>
+    
+</body>
+</html>
